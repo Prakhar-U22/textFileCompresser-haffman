@@ -1,0 +1,97 @@
+https://www.youtube.com/watch?v=XLfgeaYHinM
+
+
+==========================
+ HUFFMAN ENCODER & DECODER
+==========================
+
+This guide will help you compress and decompress text files
+using your Huffman Encoder and Decoder programs.
+
+------------------------------------------------------------
+STEP 1: CREATE A SAMPLE INPUT FILE
+------------------------------------------------------------
+
+1. Open Notepad.
+2. Paste the following sample text:
+
+Huffman coding is a popular method of lossless data compression.
+It assigns variable-length codes to input characters, with shorter codes assigned to more frequent characters.
+This ensures that no code is a prefix of another, making the decoding process unambiguous.
+
+3. Save the file as:
+   input.txt
+
+4. Make sure it’s located in your project directory:
+   C:\Users\Prakhar\OneDrive\Desktop\RES\Text File Compressor\
+
+------------------------------------------------------------
+STEP 2: COMPILE THE ENCODER
+------------------------------------------------------------
+
+In PowerShell or Command Prompt, navigate to your project folder:
+
+cd "C:\Users\Prakhar\OneDrive\Desktop\RES\Text File Compressor\"
+
+Then compile the encoder:
+
+***  [    g++ Huffman.cpp -o Huffman     ]
+
+------------------------------------------------------------
+STEP 3: RUN THE ENCODER
+------------------------------------------------------------
+
+To encode your input text file, run:
+
+***  [    .\Huffman input output     ]
+
+This will:
+- Read from input.txt
+- Create output.bin (the compressed binary file)
+
+------------------------------------------------------------
+STEP 4: COMPILE THE DECODER
+------------------------------------------------------------
+
+Compile the decoder program:
+
+***  [    g++ HuffmanDecoder.cpp -o HuffmanDecoder     ]
+
+------------------------------------------------------------
+STEP 5: RUN THE DECODER
+------------------------------------------------------------
+
+To decode and get back the original text, run:
+
+***  [    .\HuffmanDecoder output decoded     ]
+
+This will:
+- Read from output.bin
+- Write the decompressed result into decoded.txt
+
+------------------------------------------------------------
+STEP 6: VERIFY THE RESULT
+------------------------------------------------------------
+
+Now you should have three files in your folder:
+
+1. input.txt        → Original text file
+2. output.bin       → Compressed binary file
+3. decoded.txt      → Decompressed text file (same as input)
+
+To verify correctness, open both input.txt and decoded.txt.
+Their content should be identical.
+
+------------------------------------------------------------
+NOTE:
+------------------------------------------------------------
+
+- Ensure both encoder and decoder executables are in the same directory as your text files.
+- If PowerShell shows “Usage:” or “Empty or invalid file”, recheck your filenames and make sure input.txt exists.
+
+------------------------------------------------------------
+END OF GUIDE
+------------------------------------------------------------
+
+
+

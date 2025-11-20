@@ -1,0 +1,3 @@
+Huffman coding is a popular method of lossless data compression.
+It assigns variable-length codes to input characters, with shorter codes assigned to more frequent characters.
+This ensures that no code is a prefix of another, making the decoding process unambiguous.
