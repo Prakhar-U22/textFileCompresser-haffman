@@ -62,7 +62,7 @@ int main(int argc, char* argv[]){
 
     // Read frequency table
     vector<int> freq(128, 0);
-    for (int i = 0; i < 128; i++){
+    for(int i = 0; i < 128; i++){
         binaryFile.read(reinterpret_cast<char*>(&freq[i]), sizeof(int));
     }
 
